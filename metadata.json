@@ -1,0 +1,6 @@
+{
+  "name": "Levain & Co. - White-Label Bakery Landing Page",
+  "description": "Boilerplate White-Label de altíssima conversão para Padarias, Confeitarias e Panificadoras Artesanais com engine de temas dinâmico e proteção de build.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

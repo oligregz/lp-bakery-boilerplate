@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom scrollbar matching dynamic theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Smooth transitions */
+* {
+  border-color: var(--color-border);
+}
