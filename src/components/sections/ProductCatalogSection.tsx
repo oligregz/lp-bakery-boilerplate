@@ -1,12 +1,15 @@
 import React, { useState, useMemo } from 'react';
 import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { useCart } from '../../context/CartContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 import { ProductItem } from '../../types/database.types';
 
 export const ProductCatalogSection: React.FC = () => {
-  const { products, product_categories } = database;
+  const { currentBakery } = useBakery();
+  const { products } = currentBakery;
+  const { product_categories } = database;
   const { addToCart } = useCart();
 
   const [selectedCategory, setSelectedCategory] = useState<string>('todos');

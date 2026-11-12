@@ -1,10 +1,11 @@
 import React from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const ArtisanalProcessSection: React.FC = () => {
-  const { artisanal_process } = database;
+  const { currentBakery } = useBakery();
+  const { artisanal_process } = currentBakery;
 
   return (
     <section id="processo" className="py-16 sm:py-24 bg-[var(--color-bg-alt)] transition-colors relative overflow-hidden">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { useTheme } from '../../context/ThemeContext';
 import { useCart } from '../../context/CartContext';
 import { renderIcon } from '../../utils/iconResolver';
@@ -9,7 +9,8 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenThemeDrawer }) => {
-  const { navigation, brand_profile } = database;
+  const { currentBakery } = useBakery();
+  const { navigation, brand_profile } = currentBakery;
   const { mode, toggleMode } = useTheme();
   const { totalItemsCount, setIsCartOpen } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

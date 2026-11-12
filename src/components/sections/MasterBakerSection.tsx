@@ -1,10 +1,11 @@
 import React from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const MasterBakerSection: React.FC = () => {
-  const { master_baker } = database;
+  const { currentBakery } = useBakery();
+  const { master_baker } = currentBakery;
 
   return (
     <section id="padeiro" className="py-16 sm:py-24 bg-[var(--color-bg)] transition-colors">

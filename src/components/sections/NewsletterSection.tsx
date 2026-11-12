@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { useCart } from '../../context/CartContext';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const NewsletterSection: React.FC = () => {
-  const { newsletter } = database;
+  const { currentBakery } = useBakery();
+  const { newsletter } = currentBakery;
   const { applyCoupon } = useCart();
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);

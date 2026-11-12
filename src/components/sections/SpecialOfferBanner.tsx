@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { useCart } from '../../context/CartContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const SpecialOfferBanner: React.FC = () => {
-  const { special_offers } = database;
+  const { currentBakery } = useBakery();
+  const { special_offers } = currentBakery;
   const { applyCoupon, setIsCartOpen } = useCart();
   const [copied, setCopied] = useState(false);
 

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { useCart } from '../../context/CartContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const CartDrawer: React.FC = () => {
-  const { cart_checkout, store_location, products } = database;
+  const { currentBakery } = useBakery();
+  const { cart_checkout } = database;
+  const { store_location, products } = currentBakery;
   const {
     items,
     updateQuantity,

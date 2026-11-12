@@ -1,0 +1,51 @@
+Informações das Padarias
+
+1. Padaria Nova Taboão
+- Horário de Funcionamento: 6:00 AM - 10:40 PM
+- Endereço: Estr. São Francisco, 1913 - Parque Taboao, Taboão da Serra - SP, 06765-000
+- Telefone: +55 11 4701-5826
+
+2. Padaria Varandas
+- Horário de Funcionamento: 6:00 AM - 10:00 PM
+- Endereço: Estr. Kizaemon Takeuti, 727 - Jardim Clementino, Taboão da Serra - SP, 06775-000
+- Telefone: +55 11 4137-4950
+
+3. Padaria e Pizzaria Nova Conquista
+- Horário de Funcionamento: 6:00 AM - 11:00 PM
+- Endereço: R. Chico Mendes, 96 - Jardim Margarida, Taboão da Serra - SP, 06786-080
+- Telefone: +55 11 4245-3313
+
+4. Padaria e pizzaria Taboão Premium
+- Horário de Funcionamento: 6:00 AM - 11:00 PM
+- Endereço: Av. Água Funda, 634 - Taboão, São Bernardo do Campo - SP, 09669-100
+- Telefone: +55 11 4178-1127
+
+5. Padaria Uspão
+- Horário de Funcionamento: 9:00 AM - 10:00 PM
+- Endereço: Avenida Professor Mello Moraes, Tv. 8, 1235 - Butantã, São Paulo - SP, 05508-000, Brazil
+- Telefone: Não disponível na imagem
+
+6. Padaria do Bairro e Esfiharia Santiago
+- Horário de Funcionamento: 6:00 AM - 10:00 PM
+- Endereço: R. José Fugulin, 108 - Jardim Santa Cruz (Campo Grande), São Paulo - SP, 04455-390
+- Telefone: +55 11 5611-6337
+
+7. Salut! Padaria
+- Horário de Funcionamento: 6:00 AM - 10:00 PM
+- Endereço: Av. Imperatriz Leopoldina, 491 - Vila Leopoldina, São Paulo - SP, 05305-010, Brazil
+- Telefone: +55 11 3796-0008
+
+8. Padaria Bella Jully
+- Horário de Funcionamento: 5:40 AM - 10:30 PM
+- Endereço: R. Profª José Azevedo Minhoto, 99 - Vila Quintana, Osasco - SP, 06194-060
+- Telefone: +55 11 3682-5977
+
+9. Padaria Aurora
+- Horário de Funcionamento: 6:00 AM - 10:00 PM
+- Endereço: R. Narciso Sturlini, 352 - Centro, Osasco - SP, 06018-095
+- Telefone: +55 11 91670-0950
+
+10. Villagio Padaria
+- Horário de Funcionamento: 6:00 AM - 10:00 PM
+- Endereço: R. Froben, 185 - Vila Leopoldina, São Paulo - SP, 05315-010
+- Telefone: +55 11 95305-0015

@@ -1,9 +1,10 @@
 import React from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const StoreLocationSection: React.FC = () => {
-  const { store_location } = database;
+  const { currentBakery } = useBakery();
+  const { store_location } = currentBakery;
 
   const whatsappUrl = `https://wa.me/${store_location.contact.whatsappNumber}?text=${encodeURIComponent(
     store_location.contact.whatsappMessagePreset

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const FreshBatchesSection: React.FC = () => {
-  const { fresh_batches, store_location } = database;
+  const { currentBakery } = useBakery();
+  const { fresh_batches, store_location } = currentBakery;
   const [reservedBatchId, setReservedBatchId] = useState<string | null>(null);
 
   const handleReserve = (item: typeof fresh_batches.items[0]) => {

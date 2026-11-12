@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const FaqSection: React.FC = () => {
-  const { faq, store_location } = database;
+  const { currentBakery } = useBakery();
+  const { faq, store_location } = currentBakery;
   const [openFaqId, setOpenFaqId] = useState<string | null>(faq.items[0]?.id || null);
 
   const toggleFaq = (id: string) => {

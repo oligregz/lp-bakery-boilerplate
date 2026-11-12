@@ -1,10 +1,11 @@
 import React from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const CustomerReviewsSection: React.FC = () => {
-  const { customer_reviews } = database;
+  const { currentBakery } = useBakery();
+  const { customer_reviews } = currentBakery;
 
   return (
     <section id="avaliacoes" className="py-16 sm:py-24 bg-[var(--color-bg-alt)] transition-colors">

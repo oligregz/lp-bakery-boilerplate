@@ -42,6 +42,34 @@ export interface ThemeConfig {
   presets: Record<string, ThemePreset>;
 }
 
+export interface SectionsVisibility {
+  hero: boolean;
+  fresh_batches: boolean;
+  products: boolean;
+  artisanal_process: boolean;
+  special_offers: boolean;
+  customer_reviews: boolean;
+  master_baker: boolean;
+  store_location: boolean;
+  faq: boolean;
+  newsletter: boolean;
+  footer: boolean;
+  floating_whatsapp: boolean;
+}
+
+export interface DeveloperProfile {
+  name: string;
+  title: string;
+  headline: string;
+  whatsappNumber: string;
+  whatsappMessagePreset: string;
+  portfolioUrl: string;
+  portfolioLabel: string;
+  whatsappButtonLabel: string;
+  hubTitle: string;
+  hubSubtitle: string;
+}
+
 export interface BrandProfile {
   name: string;
   legalName: string;
@@ -407,14 +435,20 @@ export interface FooterCollection {
   };
 }
 
-export interface AppDatabase {
-  theme_config: ThemeConfig;
+export interface BakeryEntity {
+  id: string;
+  slug: string;
+  path: string;
+  name: string;
+  operating_hours: string;
+  phone: string;
+  theme_preset: string;
+  theme_mode: 'light' | 'dark';
+  sections_visibility: SectionsVisibility;
   brand_profile: BrandProfile;
-  seo_metadata: SeoMetadata;
   navigation: NavigationCollection;
   hero_section: HeroSectionCollection;
   fresh_batches: FreshBatchesCollection;
-  product_categories: ProductCategory[];
   products: ProductsCollection;
   artisanal_process: ArtisanalProcessCollection;
   special_offers: SpecialOfferCollection;
@@ -423,6 +457,14 @@ export interface AppDatabase {
   store_location: StoreLocationCollection;
   faq: FaqCollection;
   newsletter: NewsletterCollection;
-  cart_checkout: CartCheckoutConfig;
   footer: FooterCollection;
+}
+
+export interface AppDatabase {
+  theme_config: ThemeConfig;
+  developer_profile: DeveloperProfile;
+  default_bakery_slug: string;
+  bakeries: Record<string, BakeryEntity>;
+  product_categories: ProductCategory[];
+  cart_checkout: CartCheckoutConfig;
 }

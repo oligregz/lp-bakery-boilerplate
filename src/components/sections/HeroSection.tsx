@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { MediaImage } from '../common/MediaImage';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const HeroSection: React.FC = () => {
-  const { hero_section, brand_profile } = database;
+  const { currentBakery } = useBakery();
+  const { hero_section, brand_profile } = currentBakery;
   const [countdown, setCountdown] = useState(hero_section.liveBatchBadge.countdownMinutes * 60);
 
   // Live countdown ticker simulation for CRO freshness urgency

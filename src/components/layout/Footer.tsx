@@ -1,9 +1,10 @@
 import React from 'react';
-import { database } from '../../data/database';
+import { useBakery } from '../../context/BakeryContext';
 import { renderIcon } from '../../utils/iconResolver';
 
 export const Footer: React.FC = () => {
-  const { footer, brand_profile } = database;
+  const { currentBakery } = useBakery();
+  const { footer, brand_profile } = currentBakery;
 
   return (
     <footer className="bg-[var(--color-surface)] border-t border-[var(--color-border)] pt-16 pb-12 transition-colors">
