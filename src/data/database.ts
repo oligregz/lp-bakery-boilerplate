@@ -833,7 +833,7 @@ export const database: AppDatabase = {
 
   developer_profile: {
     name: 'Gregory Oliveira',
-    title: 'Engenheiro de Software & Especialista em CRO Frontend',
+    title: 'Engenheiro de Software & Especialista em sistemas de soluções para seu negócio',
     headline: 'Quer mostrar seu negócio para internet ou precisa de melhorar sua operação com praticidade, entre em contato com o Engenheiro de Software Gregory Oliveira',
     whatsappNumber: '5575991689780',
     whatsappMessagePreset: 'Olá, vim pelo Link do Sistema de Landing Pages para Padarias',
